@@ -15,4 +15,4 @@ runs:
   steps:
     - name: Get ECR Image Scan Results
       shell: pwsh
-      run: ${{ github.action_path }}/get-ecr-image-scan-results-action.ps1 -Registry '${{ inputs.registry }}' -RepositoryName '${{ inputs.repository-name }}' -Tag '${{ inputs.tag }}'
+      run: ${{ github.action_path }}/action.ps1 -Registry '${{ inputs.registry }}' -RepositoryName '${{ inputs.repository-name }}' -Tag '${{ inputs.tag }}'
